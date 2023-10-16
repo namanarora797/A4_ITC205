@@ -133,7 +133,7 @@ public class OrderItemControl {
 		double totalPayments = 0.0;
         long numberOfItems = numberOfItemsOrdered;
 
-        totalPayments = price + numberOfItems;
+        totalPayments = price * numberOfItems;
         
         currentOrder.getPublisher().incurPayment(totalPayments);
 
